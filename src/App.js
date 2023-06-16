@@ -21,7 +21,7 @@ const App = () => {
   const setComplete = (id) => (
     setTasks(prevTasks => {
       const updatedTasks = prevTasks.map(task => {
-      return task.id === id ? {...task, isComplete:task.isComplete} : task;
+      return task.id === id ? {...task, isComplete: !task.isComplete} : task;
     });
     return updatedTasks;
   })
