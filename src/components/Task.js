@@ -15,7 +15,7 @@ const Task = ({ id, title, isComplete, setComplete, removeTask  }) => {
       >
         {title}
       </button>
-      <button className={() => removeTask(id)}>x</button>
+      <button onClick = {() => removeTask(id)}>x</button>
     </li>
   );
 };
